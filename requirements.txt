@@ -1,0 +1,3 @@
+# Ce fichier liste tous les packages Python dont votre application 
+# Python dépend. Vous pouvez avoir différents fichiers pour les dépendances
+# en environnement de développement et de production.

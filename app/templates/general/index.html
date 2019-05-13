@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+
+	<div class="container" style="padding-top: 20px">
+		<div>
+			<h1>Portail Python de Rapports</h1>
+			<p>Le portail de rapport est une application Flask distincte des rapports et tableaux de bord.<br>
+	    	<ul>
+		    	<li><a href="{{ url_for('general.cool_form') }}">Lien propre au portail de rapports!</a></li>
+		    </ul>
+		  </p>
+  	</div>
+
+  	<br>
+    <div class="card bg-light mb-12">
+		  <div class="card-header"><h3>Rapports</h3></div>
+		  <div class="card-body">
+		    <h5 class="card-title">Applications Dash</h5>
+		    <p class="card-text">
+		    	<ul>
+		    		<li><a href="./demo/D01_simple_app">Dash app n°1: Hello World!</a></li>
+		    		<li><a href="./demo/D02_simple_graphique">Dash app n°2: Simple graphique</a></li>
+		    		<!--<li><a href="./demo/D03_dashboard_sklearn">Dash app n°3: Dashboard Scikit-Learn</a></li>-->
+		    	</ul>
+    		</p>
+		    <h5 class="card-title">Applications Flask</h5>
+		    <p class="card-text">
+		    	<ul>
+		    		<li><a href="./demo/F01_hello_world">Fask app n°1: Hello World!</a></li>
+		    		<li><a href="./demo/F02_simple_app">Fask app n°2: Simple application</a></li>
+		    		<li><a href="./demo/F03_complex_app">Fask app n°3: Complexe application</a></li>
+		    	</ul>
+    		</p>
+		  </div>
+		</div>
+
+  </div>
+
+{% endblock %}
